@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C72E6826-F3A4-4529-A6B3-BF4DFB1A55F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Klijent</RootNamespace>
+    <AssemblyName>Klijent</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gui\BrisanjeClanaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\BrisanjeClanaGui.Designer.cs">
+      <DependentUpon>BrisanjeClanaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\GlavniMeniGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\GlavniMeniGui.Designer.cs">
+      <DependentUpon>GlavniMeniGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PretragaFilmovaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PretragaFilmovaGui.Designer.cs">
+      <DependentUpon>PretragaFilmovaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PretragaIznajmljivanjaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PretragaIznajmljivanjaGui.Designer.cs">
+      <DependentUpon>PretragaIznajmljivanjaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\PrijavaNaSistemGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\PrijavaNaSistemGui.Designer.cs">
+      <DependentUpon>PrijavaNaSistemGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UnosClanaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\UnosClanaGui.Designer.cs">
+      <DependentUpon>UnosClanaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UnosFilmaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\UnosFilmaGui.Designer.cs">
+      <DependentUpon>UnosFilmaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gui\UnosIznajmljivanjaGui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gui\UnosIznajmljivanjaGui.Designer.cs">
+      <DependentUpon>UnosIznajmljivanjaGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KomunikacijaServer.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\BrisanjeClanaKontroler.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\PretragaFilmovaKontroler.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\PretragaIznajmljivanjaKontroler.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\PrijavaNaSistemKontroler.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\UnosClanaKontroler.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\UnosFilmaKontroler.cs" />
+    <Compile Include="KontroleriKorisnickogInterfejsa\UnosIznajmljivanjaKontroler.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Gui\BrisanjeClanaGui.resx">
+      <DependentUpon>BrisanjeClanaGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\GlavniMeniGui.resx">
+      <DependentUpon>GlavniMeniGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PretragaFilmovaGui.resx">
+      <DependentUpon>PretragaFilmovaGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PretragaIznajmljivanjaGui.resx">
+      <DependentUpon>PretragaIznajmljivanjaGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\PrijavaNaSistemGui.resx">
+      <DependentUpon>PrijavaNaSistemGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UnosClanaGui.resx">
+      <DependentUpon>UnosClanaGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UnosFilmaGui.resx">
+      <DependentUpon>UnosFilmaGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gui\UnosIznajmljivanjaGui.resx">
+      <DependentUpon>UnosIznajmljivanjaGui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domen\Domen.csproj">
+      <Project>{059420eb-ece8-43c4-8f8b-e63bc3a157ac}</Project>
+      <Name>Domen</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

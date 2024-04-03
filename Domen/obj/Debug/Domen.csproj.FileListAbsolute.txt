@@ -1,0 +1,12 @@
+C:\Users\PC\source\repos\IznajmljivanjeFilmova\Domen\bin\Debug\Domen.dll
+C:\Users\PC\source\repos\IznajmljivanjeFilmova\Domen\bin\Debug\Domen.pdb
+C:\Users\PC\source\repos\IznajmljivanjeFilmova\Domen\obj\Debug\Domen.csprojAssemblyReference.cache
+C:\Users\PC\source\repos\IznajmljivanjeFilmova\Domen\obj\Debug\Domen.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\IznajmljivanjeFilmova\Domen\obj\Debug\Domen.dll
+C:\Users\PC\source\repos\IznajmljivanjeFilmova\Domen\obj\Debug\Domen.pdb
+C:\Users\Korisnik\ProjektovanjeSoftvera\IznajmljivanjeFilmovaFinal\Domen\bin\Debug\Domen.dll
+C:\Users\Korisnik\ProjektovanjeSoftvera\IznajmljivanjeFilmovaFinal\Domen\bin\Debug\Domen.pdb
+C:\Users\Korisnik\ProjektovanjeSoftvera\IznajmljivanjeFilmovaFinal\Domen\obj\Debug\Domen.csproj.AssemblyReference.cache
+C:\Users\Korisnik\ProjektovanjeSoftvera\IznajmljivanjeFilmovaFinal\Domen\obj\Debug\Domen.csproj.CoreCompileInputs.cache
+C:\Users\Korisnik\ProjektovanjeSoftvera\IznajmljivanjeFilmovaFinal\Domen\obj\Debug\Domen.dll
+C:\Users\Korisnik\ProjektovanjeSoftvera\IznajmljivanjeFilmovaFinal\Domen\obj\Debug\Domen.pdb
